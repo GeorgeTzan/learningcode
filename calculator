@@ -1,0 +1,23 @@
+using System;
+
+namespace Calculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter your first number: ");
+            double num1 = double.Parse(Console.ReadLine());
+            int numres1 = Convert.ToInt32(num1);
+            Console.Write("Enter your second number: ");
+            double num2 = double.Parse(Console.ReadLine());
+            int numres2 = Convert.ToInt32(num2);
+            Console.Write("The final number is: ");
+            Console.Write(numres2 += numres1);
+            Console.WriteLine();
+            Console.ReadLine();
+
+
+        }
+    }
+}
