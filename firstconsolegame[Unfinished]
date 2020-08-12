@@ -1,0 +1,221 @@
+using System;
+using System.Drawing;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace my_first_console_thing
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+
+        {
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Welcome");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("-------");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("Start");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("-------");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("-------");
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.WriteLine("SELECT:");
+            Console.ForegroundColor = ConsoleColor.White;
+            string start = Console.ReadLine();
+
+
+
+            {
+                if (start == "Start")
+                Console.WriteLine("STARTING..");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("-------");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("-------");
+                Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                Console.WriteLine("YOU HAVE 100 HEALTH, WHERE DO YOU WANNA GO");
+                Console.WriteLine("");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("[HOME]");
+                Console.WriteLine("[PARK]");
+                Console.WriteLine("");
+                Console.ForegroundColor = ConsoleColor.White;
+
+                Console.WriteLine("Select:");
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+            {
+                string next = Console.ReadLine();
+                if (next == "HOME")
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                    await Task.Delay(2000);
+                    Console.WriteLine("YOU GOT HOME.");
+                    Console.WriteLine("");
+                    Console.WriteLine("What you wanna do?");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("");
+                    Console.WriteLine("Go Out");
+                    Console.WriteLine("Sleep");
+
+
+                }
+                else
+                {
+                    if (next == "PARK") 
+                    Console.WriteLine("");
+                    Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                    Console.WriteLine("Wanna Explore?");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("");
+                    Console.WriteLine("[YES]");
+                    Console.WriteLine("[NO]");
+                    Console.WriteLine("");
+
+                }
+                string next1 = Console.ReadLine();
+                if (next1 == "Yes")
+                {
+                    Console.WriteLine("");
+                    if (next1 == "Yes")
+                        Console.WriteLine("");
+                    Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                    Console.WriteLine("Um");
+                    await Task.Delay(2000);
+                }
+
+
+                {
+                    int tired = 23;
+                    if (tired < 30)
+                    {
+                        Console.WriteLine("YOU FEEL TIRED RIGHT NOW.");
+                        await Task.Delay(2000);
+                        Console.WriteLine("");
+                        await Task.Delay(2000);
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                        Console.WriteLine("GOING HOME...");
+                        await Task.Delay(2000);
+                        Console.WriteLine("");
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                        Console.WriteLine("YOU GOT HOME.");
+                        Console.WriteLine("");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        await Task.Delay(2000);
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                        Console.WriteLine("GOING TO PARK");
+                        await Task.Delay(2000);
+                        Console.WriteLine("");
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                        Console.WriteLine("Wanna Explore?");
+                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine("");
+                        Console.WriteLine("[YES]");
+                        Console.WriteLine("[NO]");
+                        Console.WriteLine("");
+                    }
+                    if (next1 == "Yes")
+                    {
+                        Console.WriteLine("");
+                        if (next1 == "Yes")
+                            Console.WriteLine("");
+                        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                        Console.WriteLine("You've Explored the Park");
+                        await Task.Delay(2000);
+                        Console.WriteLine("Returning Home");
+
+                    }
+                }
+
+
+
+
+
+                {
+                    if (next1 == "No")
+                    Console.WriteLine("");
+                    Console.ForegroundColor = ConsoleColor.DarkMagenta;
+                    Console.WriteLine("YOU GOT HOME.");
+                    Console.WriteLine("");
+                    Console.ForegroundColor = ConsoleColor.White;
+
+                }
+                {
+
+
+
+                    Console.WriteLine("What you wanna do?");
+                    Console.WriteLine("Press Enter");
+                    string eat = Console.ReadLine();
+                    Console.WriteLine("Press Enter");
+                    string leavehous = Console.ReadLine();
+                    Console.WriteLine("HUNGER: 75, TIREDNESS: 85");
+                    Console.WriteLine("Press Enter");
+                    Console.WriteLine("Press Enter");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("");
+                    Console.WriteLine("[Eat]");
+                    Console.WriteLine("[Sleep]");
+                    Console.WriteLine("[Go out]");
+                    Console.WriteLine("");
+                    Console.ReadLine();
+                    string sleep = "sleep";
+
+
+                    {
+
+                        if (sleep == "sleep")
+                            Console.WriteLine("BATTERIES CHARGED, GOOD MORNING");
+
+
+                    }//else
+                    {
+                        if (eat == "Eat") 
+
+                        Console.WriteLine("What kind of food do you want?:");
+                        Console.WriteLine("");
+                        Console.WriteLine("[Online]");
+                        Console.WriteLine("[Ηomemade Food (HMF)]");
+                        Console.WriteLine("");
+
+                    }
+
+                    string Online = "Online";
+                    string homemade = "HMF";
+
+                    if (Online == "Online")
+                    {
+                        Console.WriteLine("Select Store:");
+                        Console.WriteLine("");
+                        Console.WriteLine("[McDonald's]");
+                        Console.WriteLine("[BurgerKing]");
+                        Console.WriteLine("[Pizza Hut]");
+                        Console.WriteLine("[Subway]");
+                    }
+                    string McDonalds = Console.ReadLine();
+
+
+
+
+
+
+
+
+
+
+                }
+            }
+        }
+    }
+}
+
+
+
