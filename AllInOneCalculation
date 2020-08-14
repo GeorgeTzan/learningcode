@@ -1,0 +1,28 @@
+using System;
+
+namespace Skillshare_cource
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num;
+            Console.Write("Enter your base number: ");
+            num = int.Parse(Console.ReadLine());
+            Console.Write("Enter your 1st Number: ");
+            num += int.Parse(Console.ReadLine());
+            Console.Write("Enter your 2nd Number: ");
+            num -= int.Parse(Console.ReadLine());
+            Console.Write("Enter your 3rd Number: ");
+            num *= int.Parse(Console.ReadLine());
+            Console.Write("Enter your 4th Number: ");
+            num /= int.Parse(Console.ReadLine());
+
+            Console.WriteLine();
+            Console.Write("Result: " + num);
+
+
+
+        }
+    }
+}
