@@ -67,7 +67,11 @@ namespace GuessTheNumber
             {
                 Console.WriteLine("You've won " + count + " times");
                 Console.WriteLine("You've lost " + count1 + " times");
-            }else
+                Console.WriteLine("Press any key to close: ");
+                Console.ReadKey();
+                Environment.Exit(0);
+            }
+            else
 
                 //loop
             while (endinput == "y")
@@ -124,7 +128,8 @@ namespace GuessTheNumber
                         //Counts
                         Console.WriteLine("You've won " + count + " times");
                         Console.WriteLine("You've lost " + count1 + " times");
-
+                        Console.WriteLine("Press any key to close: ");
+                        Console.ReadKey();
                         break;
                     }
 
