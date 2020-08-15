@@ -1,0 +1,31 @@
+using System;
+using System.Collections;
+using System.Threading.Tasks;
+
+namespace Skillshare_cource
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Do you wanna know the current time?");
+            string ans = Console.ReadLine();
+
+            if (ans == "Yes")
+            {
+                Console.WriteLine("Current time is: " + DateTime.Now.ToLongTimeString());
+            }
+            else if (ans == "No")
+                {
+                    Console.WriteLine("Okay :)");
+                }
+                else
+                { 
+                Console.WriteLine("You didn't type yes or no.");
+                }
+
+
+            }
+        }
+    }
