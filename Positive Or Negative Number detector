@@ -1,0 +1,30 @@
+using System;
+using System.Collections;
+using System.Threading.Tasks;
+
+namespace Skillshare_course
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter your Number: ");
+            int a = int.Parse(Console.ReadLine());
+            if (a < 0)
+            
+                Console.WriteLine("Negative Number");
+            
+            else if (a > 0)
+            
+                Console.WriteLine("Positive Number");
+            
+            
+            if (a == 0)
+            
+                Console.WriteLine("zero");
+               
+
+            
+        }
+    }
+}
