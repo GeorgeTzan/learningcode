@@ -85,13 +85,13 @@ namespace GuessTheNumber
                 int playerans1 = int.Parse(Console.ReadLine());
                 int botnum1 = rnd1.Next(1, 10);
 
-                    if (playerans > 10)
+                    if (playerans1 > 10)
                     {
                         Console.WriteLine("You chosed a number that's over 10");
                         Console.WriteLine("Closing application..");
                         Environment.Exit(0);
                     }
-                    else if (playerans < 1)
+                    else if (playerans1 < 1)
                     {
                         Console.WriteLine("You chosed a number that's under 10");
                         Console.WriteLine("Closing application..");
