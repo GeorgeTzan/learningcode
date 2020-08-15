@@ -1,0 +1,143 @@
+using Microsoft.VisualBasic;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace GuessTheNumber
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            //Weclome Start
+            Console.WriteLine("Welcome to guess the number!");
+            Console.WriteLine("------------------------------");
+            await Task.Delay(500);
+
+            //Creator
+            Console.WriteLine("Made by Nekker");
+            Console.WriteLine();
+
+            //Clears the Console
+            await Task.Delay(500);
+            int count = 0;
+            int count1 = 0;
+            Random rnd = new Random();
+            Console.Clear();
+            Console.Write("Enter a number 1 - 10: ");
+
+            int playerans = int.Parse(Console.ReadLine());
+            int botnum = rnd.Next(1, 10);
+
+            if (playerans > 10)
+            {
+                Console.WriteLine("You chosed a number that's over 10");
+                Console.WriteLine("Closing application..");
+                Environment.Exit(0);
+            }
+            else if (playerans < 1)
+            {
+                Console.WriteLine("You chosed a number that's under 10");
+                Console.WriteLine("Closing application..");
+                Environment.Exit(0);
+            }
+
+           else if (playerans == botnum) // you won
+                {
+                Console.WriteLine("Congratulations! You've won!");
+                count++;
+                Console.WriteLine("Do u want to Continue? (y/n):");
+                Console.WriteLine("---------------------------------------");
+            }
+            else 
+            {
+                Console.WriteLine("You've lost!");
+                count1++;
+                Console.WriteLine("Do u want to Restart? (y/n):");
+                Console.WriteLine("---------------------------------------");
+            }
+
+            
+
+
+                string endinput = Console.ReadLine();
+            endinput.ToLower();
+
+            if (endinput == "n")
+            {
+                Console.WriteLine("You've won " + count + " times");
+                Console.WriteLine("You've lost " + count1 + " times");
+            }else
+
+                //loop
+            while (endinput == "y")
+            {
+                //Clears the Console
+                await Task.Delay(500);
+                Random rnd1 = new Random();
+                Console.Clear();
+                Console.Write("Enter a number 1 - 10: ");
+
+                int playerans1 = int.Parse(Console.ReadLine());
+                int botnum1 = rnd1.Next(1, 10);
+
+                    if (playerans > 10)
+                    {
+                        Console.WriteLine("You chosed a number that's over 10");
+                        Console.WriteLine("Closing application..");
+                        Environment.Exit(0);
+                    }
+                    else if (playerans < 1)
+                    {
+                        Console.WriteLine("You chosed a number that's under 10");
+                        Console.WriteLine("Closing application..");
+                        Environment.Exit(0);
+                    }
+
+
+
+                    if (playerans1 == botnum1) // you won
+                {
+                        Console.WriteLine("Congratulations! You've won!");
+                        count++;
+                        Console.WriteLine("Do u want to Continue? (y/n):");
+                        Console.WriteLine("---------------------------------------");
+                    }
+                else if (playerans1 != botnum1)
+                {
+                    Console.WriteLine("You've lost!");
+                        count1++;
+                        Console.WriteLine("Do u want to Restart? (y/n):");
+                        Console.WriteLine("---------------------------------------");
+                    }
+                    
+                    string coninput = Console.ReadLine();
+                    coninput.ToLower();
+                    if (coninput == "y")
+                    {
+
+                        continue;
+                    }
+
+                    else if (coninput == "n"){ 
+
+                        //Counts
+                        Console.WriteLine("You've won " + count + " times");
+                        Console.WriteLine("You've lost " + count1 + " times");
+
+                        break;
+                    }
+
+               
+                    //if you're reading this, you're awesome!
+             
+
+
+
+            
+
+
+            }
+        }
+    }
+}
